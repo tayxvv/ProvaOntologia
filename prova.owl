@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-11 "http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#"
+     xml:base="http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#origem -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;origem"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Alimento -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Alimento"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Animal -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Animal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Aves -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Aves">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Carne -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Carne">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Alimento"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Mamífero -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Mamífero">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#TipoCarne -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;TipoCarne">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Carne"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Utensilio -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Utensilio"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Alcatra -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Alcatra">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;Boi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Asinha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Asinha">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;CarneAves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Boi -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Boi">
+        <rdf:type rdf:resource="&untitled-ontology-11;Mamífero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#CarneAves -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;CarneAves">
+        <rdf:type rdf:resource="&untitled-ontology-11;TipoCarne"/>
+        <origem rdf:resource="&untitled-ontology-11;Frango"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#CarneBovina -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;CarneBovina">
+        <rdf:type rdf:resource="&untitled-ontology-11;TipoCarne"/>
+        <origem rdf:resource="&untitled-ontology-11;Boi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#CarneSuina -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;CarneSuina">
+        <rdf:type rdf:resource="&untitled-ontology-11;TipoCarne"/>
+        <origem rdf:resource="&untitled-ontology-11;Porco"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Costela -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Costela">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;CarneSuina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Frango -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Frango">
+        <rdf:type rdf:resource="&untitled-ontology-11;Aves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Linguiça -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Linguiça">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;CarneSuina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Maminha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Maminha">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;Boi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Picanha -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Picanha">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carne"/>
+        <origem rdf:resource="&untitled-ontology-11;CarneBovina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Porco -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Porco">
+        <rdf:type rdf:resource="&untitled-ontology-11;Mamífero"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#pl1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#pl2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#pl3">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-11;origem"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pl1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#pl3"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-11;Alimento"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pl1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-11;Mamífero"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#pl3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-11;origem"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#pl1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#pl2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-11;origem"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl#pl2"/>
+                                                        <swrl:argument2 rdf:resource="urn:swrl#pl3"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-11;Alimento"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#pl2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
