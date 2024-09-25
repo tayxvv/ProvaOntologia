@@ -48,9 +48,37 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#prepara -->
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#preparado -->
 
-    <owl:ObjectProperty rdf:about="&untitled-ontology-11;prepara"/>
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;preparado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#recomendadoPara -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;recomendadoPara">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#utilizaCarvão -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;utilizaCarvão"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#utilizar -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;utilizar">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#é -->
+
+    <owl:ObjectProperty rdf:about="&untitled-ontology-11;é"/>
     
 
 
@@ -93,6 +121,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Carvão -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Carvão">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Equipamentos"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Churrasqueira -->
 
     <owl:Class rdf:about="&untitled-ontology-11;Churrasqueira">
@@ -123,9 +159,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Faca -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Faca">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Equipamentos"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Pessoa -->
 
     <owl:Class rdf:about="&untitled-ontology-11;Pessoa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Prato -->
+
+    <owl:Class rdf:about="&untitled-ontology-11;Prato">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Equipamentos"/>
+    </owl:Class>
     
 
 
@@ -153,14 +205,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Utensilio -->
-
-    <owl:Class rdf:about="&untitled-ontology-11;Utensilio">
-        <rdfs:subClassOf rdf:resource="&untitled-ontology-11;Equipamentos"/>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -176,9 +220,6 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Adriano">
         <rdf:type rdf:resource="&untitled-ontology-11;Churrasqueiro"/>
-        <prepara rdf:resource="&untitled-ontology-11;CarneAves"/>
-        <prepara rdf:resource="&untitled-ontology-11;CarneBovina"/>
-        <prepara rdf:resource="&untitled-ontology-11;CarneSuina"/>
     </owl:NamedIndividual>
     
 
@@ -225,14 +266,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Aventais -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Aventais">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Azeite -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Azeite">
@@ -259,6 +292,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Caipirinha">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -287,10 +321,19 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Carvão -->
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Carvão_Mineral -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Carvão">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Carvão_Mineral">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carvão"/>
+        <recomendadoPara rdf:resource="&untitled-ontology-11;CarneBovina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Carvão_Vegetal -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Carvão_Vegetal">
+        <rdf:type rdf:resource="&untitled-ontology-11;Carvão"/>
     </owl:NamedIndividual>
     
 
@@ -299,6 +342,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Cerveja">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -307,6 +351,8 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Churrasqueira_a_carvão">
         <rdf:type rdf:resource="&untitled-ontology-11;Churrasqueira"/>
+        <utilizar rdf:resource="&untitled-ontology-11;Carvão_Mineral"/>
+        <utilizar rdf:resource="&untitled-ontology-11;Carvão_Vegetal"/>
     </owl:NamedIndividual>
     
 
@@ -356,14 +402,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Espetos -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Espetos">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Fabio -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Fabio">
@@ -373,10 +411,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Facas -->
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Faca_De_Serra -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Facas">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Faca_De_Serra">
+        <rdf:type rdf:resource="&untitled-ontology-11;Faca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Faca_Desossar -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Faca_Desossar">
+        <rdf:type rdf:resource="&untitled-ontology-11;Faca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Faca_Do_Chef -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Faca_Do_Chef">
+        <rdf:type rdf:resource="&untitled-ontology-11;Faca"/>
     </owl:NamedIndividual>
     
 
@@ -421,18 +475,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Fósforo -->
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Fundo -->
 
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Fósforo">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Garfo -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Garfo">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Fundo">
+        <rdf:type rdf:resource="&untitled-ontology-11;Prato"/>
     </owl:NamedIndividual>
     
 
@@ -441,14 +487,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Gin">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Grelha -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Grelha">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
+        <é rdf:resource="&untitled-ontology-11;Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -530,14 +569,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Pegadores -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Pegadores">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Picanha -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Picanha">
@@ -561,14 +592,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Pratos -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Pratos">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Pão_de_Alho -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Pão_de_Alho">
@@ -577,10 +600,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Raso -->
+
+    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Raso">
+        <rdf:type rdf:resource="&untitled-ontology-11;Prato"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Refrigerante -->
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Refrigerante">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Não_Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -605,6 +637,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Suco">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Não_Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -613,14 +646,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Tayssa">
         <rdf:type rdf:resource="&untitled-ontology-11;Convidado"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/ipeweb/ontologies/2024/7/untitled-ontology-11#Tábuas -->
-
-    <owl:NamedIndividual rdf:about="&untitled-ontology-11;Tábuas">
-        <rdf:type rdf:resource="&untitled-ontology-11;Utensilio"/>
+        <come rdf:resource="&untitled-ontology-11;Alcatra"/>
     </owl:NamedIndividual>
     
 
@@ -637,6 +663,7 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Vinho">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Alcoólicas"/>
     </owl:NamedIndividual>
     
 
@@ -645,7 +672,95 @@
 
     <owl:NamedIndividual rdf:about="&untitled-ontology-11;Água">
         <rdf:type rdf:resource="&untitled-ontology-11;Bebidas"/>
+        <é rdf:resource="&untitled-ontology-11;Não_Alcoólicas"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#pl1">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#pl2">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#pl3">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-11;preparado"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pl2"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#pl3"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-11;Carvão"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#pl1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="&untitled-ontology-11;TipoCarne"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#pl2"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="&untitled-ontology-11;Churrasqueira"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#pl3"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-11;recomendadoPara"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#pl1"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#pl2"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
 </rdf:RDF>
 
 
